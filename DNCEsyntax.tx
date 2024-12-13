@@ -1,0 +1,37 @@
+Program:
+  'dance'
+    commands*=Command    
+  'end dance'
+;
+
+Command:
+  StyleCommand | NameCommand | MoveCommand
+;
+
+StyleCommand:
+'style = ' style=Style
+;
+
+Style:
+Breaking | Ballet | Dancehall
+;
+
+NameCommand:
+'name = ' name=STRING
+;
+
+Breaking:
+"indian step" | "front step" | "salse step" | "drop" | "Wdrop" | "sweep" | "six step" | "three step" | "coffee grinder" | "baby freeze" | "chair freeze" | "elbow freeze" | "nike freeze" | "flag freeze" | "flare" | "hook" | "cc" | "kickout" | "backspin" | "windmill" | "headspin"
+;
+
+Ballet:
+"arabesque" | "bourree turn" | "chenet" | "inside turn" | "leap" | "pas de bourree" | "pirouette" | "reach left" | "reach right" | "ron de jambe" | "saute" | "soutenu"
+;
+
+Dancehaul:
+"good chemistry" | "gunman" | "juke" | "pon di river" | "rifle walk" | "rock" | "signal to plane" | "summer bounce" | "thunderclap" | "wind" | "zip it up"
+;
+
+
+
+
